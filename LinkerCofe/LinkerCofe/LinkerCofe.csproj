@@ -97,5 +97,23 @@
   <ItemGroup>
     <None Include="Resources\Customer Linker Cofe-01.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-Coffee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C4.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

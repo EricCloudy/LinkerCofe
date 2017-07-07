@@ -29,8 +29,24 @@
         private void InitializeComponent()
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.Coffee = new System.Windows.Forms.TabPage();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SoftDrink = new System.Windows.Forms.TabPage();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
             this.Food = new System.Windows.Forms.TabPage();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clearToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -41,8 +57,10 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.lbUnit = new System.Windows.Forms.Label();
-            this.Coffee = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
+            this.Coffee.SuspendLayout();
+            this.SoftDrink.SuspendLayout();
+            this.Food.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -61,8 +79,79 @@
             this.tabControl1.Size = new System.Drawing.Size(505, 320);
             this.tabControl1.TabIndex = 0;
             // 
+            // Coffee
+            // 
+            this.Coffee.AllowDrop = true;
+            this.Coffee.AutoScroll = true;
+            this.Coffee.Controls.Add(this.button4);
+            this.Coffee.Controls.Add(this.button5);
+            this.Coffee.Controls.Add(this.button2);
+            this.Coffee.Controls.Add(this.button3);
+            this.Coffee.Controls.Add(this.button1);
+            this.Coffee.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.Coffee.ForeColor = System.Drawing.Color.SandyBrown;
+            this.Coffee.Location = new System.Drawing.Point(4, 30);
+            this.Coffee.Margin = new System.Windows.Forms.Padding(4);
+            this.Coffee.Name = "Coffee";
+            this.Coffee.Padding = new System.Windows.Forms.Padding(4);
+            this.Coffee.Size = new System.Drawing.Size(497, 286);
+            this.Coffee.TabIndex = 0;
+            this.Coffee.Text = "Coffee";
+            this.Coffee.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.BackgroundImage = global::LinkerCofe.Properties.Resources.C4;
+            this.button4.Location = new System.Drawing.Point(527, 7);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(124, 254);
+            this.button4.TabIndex = 0;
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.BackgroundImage = global::LinkerCofe.Properties.Resources.C2;
+            this.button5.Location = new System.Drawing.Point(267, 7);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(124, 254);
+            this.button5.TabIndex = 0;
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.BackgroundImage = global::LinkerCofe.Properties.Resources.C1;
+            this.button2.Location = new System.Drawing.Point(137, 7);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(124, 254);
+            this.button2.TabIndex = 0;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.BackgroundImage = global::LinkerCofe.Properties.Resources.C3;
+            this.button3.Location = new System.Drawing.Point(397, 7);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(124, 254);
+            this.button3.TabIndex = 0;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Image = global::LinkerCofe.Properties.Resources.C0;
+            this.button1.Location = new System.Drawing.Point(7, 7);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(124, 254);
+            this.button1.TabIndex = 0;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // SoftDrink
             // 
+            this.SoftDrink.AutoScroll = true;
+            this.SoftDrink.Controls.Add(this.button6);
+            this.SoftDrink.Controls.Add(this.button7);
+            this.SoftDrink.Controls.Add(this.button8);
+            this.SoftDrink.Controls.Add(this.button9);
+            this.SoftDrink.Controls.Add(this.button10);
             this.SoftDrink.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.SoftDrink.ForeColor = System.Drawing.Color.SandyBrown;
             this.SoftDrink.Location = new System.Drawing.Point(4, 30);
@@ -74,8 +163,59 @@
             this.SoftDrink.Text = "Soft Drink";
             this.SoftDrink.UseVisualStyleBackColor = true;
             // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(527, 7);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(124, 254);
+            this.button6.TabIndex = 1;
+            this.button6.Text = "button1";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(267, 7);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(124, 254);
+            this.button7.TabIndex = 2;
+            this.button7.Text = "button1";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(137, 7);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(124, 254);
+            this.button8.TabIndex = 3;
+            this.button8.Text = "button1";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(397, 7);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(124, 254);
+            this.button9.TabIndex = 4;
+            this.button9.Text = "button1";
+            this.button9.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(7, 7);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(124, 254);
+            this.button10.TabIndex = 5;
+            this.button10.Text = "button10";
+            this.button10.UseVisualStyleBackColor = true;
+            // 
             // Food
             // 
+            this.Food.AutoScroll = true;
+            this.Food.Controls.Add(this.button11);
+            this.Food.Controls.Add(this.button12);
+            this.Food.Controls.Add(this.button13);
+            this.Food.Controls.Add(this.button14);
+            this.Food.Controls.Add(this.button15);
             this.Food.Cursor = System.Windows.Forms.Cursors.Default;
             this.Food.ForeColor = System.Drawing.Color.SandyBrown;
             this.Food.Location = new System.Drawing.Point(4, 30);
@@ -85,6 +225,51 @@
             this.Food.TabIndex = 2;
             this.Food.Text = "Food";
             this.Food.UseVisualStyleBackColor = true;
+            // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(526, 6);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(124, 254);
+            this.button11.TabIndex = 1;
+            this.button11.Text = "button1";
+            this.button11.UseVisualStyleBackColor = true;
+            // 
+            // button12
+            // 
+            this.button12.Location = new System.Drawing.Point(266, 6);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(124, 254);
+            this.button12.TabIndex = 2;
+            this.button12.Text = "button1";
+            this.button12.UseVisualStyleBackColor = true;
+            // 
+            // button13
+            // 
+            this.button13.Location = new System.Drawing.Point(136, 6);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(124, 254);
+            this.button13.TabIndex = 3;
+            this.button13.Text = "button1";
+            this.button13.UseVisualStyleBackColor = true;
+            // 
+            // button14
+            // 
+            this.button14.Location = new System.Drawing.Point(396, 6);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(124, 254);
+            this.button14.TabIndex = 4;
+            this.button14.Text = "button1";
+            this.button14.UseVisualStyleBackColor = true;
+            // 
+            // button15
+            // 
+            this.button15.Location = new System.Drawing.Point(6, 6);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(124, 254);
+            this.button15.TabIndex = 5;
+            this.button15.Text = "button15";
+            this.button15.UseVisualStyleBackColor = true;
             // 
             // menuStrip1
             // 
@@ -163,20 +348,6 @@
             this.lbUnit.TabIndex = 4;
             this.lbUnit.Text = "00";
             // 
-            // Coffee
-            // 
-            this.Coffee.AllowDrop = true;
-            this.Coffee.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.Coffee.ForeColor = System.Drawing.Color.SandyBrown;
-            this.Coffee.Location = new System.Drawing.Point(4, 30);
-            this.Coffee.Margin = new System.Windows.Forms.Padding(4);
-            this.Coffee.Name = "Coffee";
-            this.Coffee.Padding = new System.Windows.Forms.Padding(4);
-            this.Coffee.Size = new System.Drawing.Size(497, 286);
-            this.Coffee.TabIndex = 0;
-            this.Coffee.Text = "Coffee";
-            this.Coffee.UseVisualStyleBackColor = true;
-            // 
             // CustomerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -190,10 +361,15 @@
             this.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximumSize = new System.Drawing.Size(917, 589);
+            this.MinimumSize = new System.Drawing.Size(917, 589);
             this.Name = "CustomerForm";
             this.Text = "CustomerForm";
             this.Load += new System.EventHandler(this.CustomerForm_Load);
             this.tabControl1.ResumeLayout(false);
+            this.Coffee.ResumeLayout(false);
+            this.SoftDrink.ResumeLayout(false);
+            this.Food.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -218,5 +394,20 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label lbUnit;
         private System.Windows.Forms.TabPage Coffee;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button15;
     }
 }
