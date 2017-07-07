@@ -94,5 +94,8 @@
   <ItemGroup>
     <None Include="Resources\2D231B7600000578-3641896-image-a-35_1465944582846.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Customer Linker Cofe-01.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

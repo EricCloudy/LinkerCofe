@@ -73,6 +73,16 @@ namespace LinkerCofe.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Customer_Linker_Cofe_01 {
+            get {
+                object obj = ResourceManager.GetObject("Customer Linker Cofe-01", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Linker_Cofe {
             get {
                 object obj = ResourceManager.GetObject("Linker Cofe", resourceCulture);
