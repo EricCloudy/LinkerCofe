@@ -17,11 +17,14 @@ namespace LinkerCofe
             InitializeComponent();
         }
 
+        CustomerForm OpenCustomer = new CustomerForm();
+
         private void button1_Click(object sender, EventArgs e)
         {
             if (comboBox1.Text == "Customer")
             {
-                MessageBox.Show("Customer");
+                this.Hide();
+                OpenCustomer.Show();
             }
             else if (comboBox1.Text == "Seller")
             {
@@ -31,6 +34,16 @@ namespace LinkerCofe
             {
                 MessageBox.Show("Error");
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

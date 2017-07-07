@@ -63,6 +63,16 @@ namespace LinkerCofe.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _2D231B7600000578_3641896_image_a_35_1465944582846 {
+            get {
+                object obj = ResourceManager.GetObject("2D231B7600000578-3641896-image-a-35_1465944582846", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Linker_Cofe {
             get {
                 object obj = ResourceManager.GetObject("Linker Cofe", resourceCulture);
