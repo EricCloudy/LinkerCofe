@@ -73,6 +73,36 @@ namespace LinkerCofe.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Button_1_01 {
+            get {
+                object obj = ResourceManager.GetObject("Button 1-01", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Button_2_01 {
+            get {
+                object obj = ResourceManager.GetObject("Button 2-01", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Button_3_01 {
+            get {
+                object obj = ResourceManager.GetObject("Button 3-01", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Button_Coffee {
             get {
                 object obj = ResourceManager.GetObject("Button-Coffee", resourceCulture);
@@ -146,6 +176,16 @@ namespace LinkerCofe.Properties {
         internal static System.Drawing.Bitmap Linker_Cofe {
             get {
                 object obj = ResourceManager.GetObject("Linker Cofe", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Loading_01 {
+            get {
+                object obj = ResourceManager.GetObject("Loading-01", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

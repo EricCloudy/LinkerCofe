@@ -18,22 +18,12 @@ namespace LinkerCofe
         }
 
         CustomerForm OpenCustomer = new CustomerForm();
+        Password OpenPasword = new Password();
+
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (comboBox1.Text == "Customer")
-            {
-                this.Hide();
-                OpenCustomer.Show();
-            }
-            else if (comboBox1.Text == "Seller")
-            {
-                MessageBox.Show("Seller");
-            }
-            else
-            {
-                MessageBox.Show("Error");
-            }
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -44,6 +34,22 @@ namespace LinkerCofe
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            OpenPasword.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Seller");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Chef");
         }
     }
 }
