@@ -19,6 +19,7 @@ namespace LinkerCofe
 
         CustomerForm OpenCustomer = new CustomerForm();
         Password OpenPasword = new Password();
+        Seller OpenSeller = new Seller();
 
 
         private void button1_Click(object sender, EventArgs e)
@@ -44,7 +45,8 @@ namespace LinkerCofe
 
         private void button3_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Seller");
+            this.Hide();
+            OpenSeller.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
