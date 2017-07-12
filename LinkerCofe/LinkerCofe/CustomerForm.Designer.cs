@@ -33,7 +33,6 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.SoftDrink = new System.Windows.Forms.TabPage();
             this.button6 = new System.Windows.Forms.Button();
@@ -57,16 +56,17 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.swichToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.No = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Discription = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Qty = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lbUnit = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button16 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.No = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Discription = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Qty = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.Coffee.SuspendLayout();
             this.SoftDrink.SuspendLayout();
@@ -136,15 +136,6 @@
             this.button2.Size = new System.Drawing.Size(124, 254);
             this.button2.TabIndex = 0;
             this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.BackgroundImage = global::LinkerCofe.Properties.Resources.C3;
-            this.button3.Location = new System.Drawing.Point(397, 7);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(124, 254);
-            this.button3.TabIndex = 0;
-            this.button3.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -361,28 +352,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(339, 224);
             this.dataGridView1.TabIndex = 3;
             // 
-            // No
-            // 
-            this.No.HeaderText = "No";
-            this.No.Name = "No";
-            this.No.Width = 40;
-            // 
-            // Discription
-            // 
-            this.Discription.HeaderText = "Disription";
-            this.Discription.Name = "Discription";
-            // 
-            // Qty
-            // 
-            this.Qty.HeaderText = "Qty";
-            this.Qty.Name = "Qty";
-            this.Qty.Width = 50;
-            // 
-            // Price
-            // 
-            this.Price.HeaderText = "Price";
-            this.Price.Name = "Price";
-            // 
             // lbUnit
             // 
             this.lbUnit.AutoSize = true;
@@ -449,6 +418,38 @@
             this.button17.Text = "X";
             this.button17.UseVisualStyleBackColor = false;
             // 
+            // button3
+            // 
+            this.button3.BackgroundImage = global::LinkerCofe.Properties.Resources.C3;
+            this.button3.Location = new System.Drawing.Point(397, 8);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(124, 254);
+            this.button3.TabIndex = 0;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // No
+            // 
+            this.No.HeaderText = "No";
+            this.No.Name = "No";
+            this.No.Width = 40;
+            // 
+            // Discription
+            // 
+            this.Discription.HeaderText = "Disription";
+            this.Discription.Name = "Discription";
+            // 
+            // Qty
+            // 
+            this.Qty.HeaderText = "Qty";
+            this.Qty.Name = "Qty";
+            this.Qty.Width = 50;
+            // 
+            // Price
+            // 
+            this.Price.HeaderText = "Price";
+            this.Price.Name = "Price";
+            this.Price.Width = 105;
+            // 
             // CustomerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -506,7 +507,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
@@ -522,11 +522,12 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ToolStripMenuItem swichToolStripMenuItem;
+        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.DataGridViewTextBoxColumn No;
         private System.Windows.Forms.DataGridViewTextBoxColumn Discription;
         private System.Windows.Forms.DataGridViewTextBoxColumn Qty;
         private System.Windows.Forms.DataGridViewTextBoxColumn Price;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button17;
     }
 }
