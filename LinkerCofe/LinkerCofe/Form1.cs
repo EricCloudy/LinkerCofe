@@ -10,48 +10,27 @@ using System.Windows.Forms;
 
 namespace LinkerCofe
 {
-    public partial class Form1 : Form
+    public partial class frmWelcome : Form
     {
-        public Form1()
+        public frmWelcome()
         {
             InitializeComponent();
         }
-
-        CustomerForm OpenCustomer = new CustomerForm();
-        Password OpenPasword = new Password();
-        Seller OpenSeller = new Seller();
-
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
+        private void btnCustomer_Click(object sender, EventArgs e)
+        {         
+            this.Hide();
+            Table chooseTable = new Table();
+            chooseTable.Show();
         }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void btnCashier_Click(object sender, EventArgs e)
         {
             this.Hide();
-            OpenPasword.Show();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            this.Hide();
+            Seller OpenSeller = new Seller();
             OpenSeller.Show();
         }
-
-        private void button4_Click(object sender, EventArgs e)
+        private void btnChief_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Chef");
+            this.Hide();
         }
     }
 }

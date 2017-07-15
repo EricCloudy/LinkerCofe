@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabControl = new System.Windows.Forms.TabControl();
             this.Coffee = new System.Windows.Forms.TabPage();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.SoftDrink = new System.Windows.Forms.TabPage();
             this.button6 = new System.Windows.Forms.Button();
@@ -55,40 +56,38 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.swichToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.lbUnit = new System.Windows.Forms.Label();
+            this.lbSellCode = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.No = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Discription = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Qty = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabControl1.SuspendLayout();
+            this.lbGrandTotal = new System.Windows.Forms.Label();
+            this.btnOrder = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.lvInvoice = new System.Windows.Forms.ListView();
+            this.colProductName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colUPrice = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colQty = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colTotal = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.tabControl.SuspendLayout();
             this.Coffee.SuspendLayout();
             this.SoftDrink.SuspendLayout();
             this.Food.SuspendLayout();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // tabControl
             // 
-            this.tabControl1.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
-            this.tabControl1.Controls.Add(this.Coffee);
-            this.tabControl1.Controls.Add(this.SoftDrink);
-            this.tabControl1.Controls.Add(this.Food);
-            this.tabControl1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.tabControl1.Location = new System.Drawing.Point(32, 178);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(505, 320);
-            this.tabControl1.TabIndex = 0;
+            this.tabControl.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
+            this.tabControl.Controls.Add(this.Coffee);
+            this.tabControl.Controls.Add(this.SoftDrink);
+            this.tabControl.Controls.Add(this.Food);
+            this.tabControl.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tabControl.Location = new System.Drawing.Point(32, 178);
+            this.tabControl.Margin = new System.Windows.Forms.Padding(4);
+            this.tabControl.Name = "tabControl";
+            this.tabControl.SelectedIndex = 0;
+            this.tabControl.Size = new System.Drawing.Size(505, 320);
+            this.tabControl.TabIndex = 0;
             // 
             // Coffee
             // 
@@ -136,6 +135,15 @@
             this.button2.Size = new System.Drawing.Size(124, 254);
             this.button2.TabIndex = 0;
             this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.BackgroundImage = global::LinkerCofe.Properties.Resources.C3;
+            this.button3.Location = new System.Drawing.Point(397, 8);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(124, 254);
+            this.button3.TabIndex = 0;
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -299,25 +307,26 @@
             // clearToolStripMenuItem
             // 
             this.clearToolStripMenuItem.Name = "clearToolStripMenuItem";
-            this.clearToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.clearToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.clearToolStripMenuItem.Text = "Clear";
             // 
             // closeToolStripMenuItem
             // 
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.closeToolStripMenuItem.Text = "Close";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(100, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
             // 
             // exitToolStripMenuItem1
             // 
             this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
-            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(103, 22);
+            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.exitToolStripMenuItem1.Text = "Exit";
+            this.exitToolStripMenuItem1.Click += new System.EventHandler(this.exitToolStripMenuItem1_Click);
             // 
             // aboutToolStripMenuItem
             // 
@@ -339,34 +348,21 @@
             this.swichToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
             this.swichToolStripMenuItem.Text = "Swich";
             // 
-            // dataGridView1
+            // lbSellCode
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.No,
-            this.Discription,
-            this.Qty,
-            this.Price});
-            this.dataGridView1.Location = new System.Drawing.Point(550, 178);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(339, 224);
-            this.dataGridView1.TabIndex = 3;
-            // 
-            // lbUnit
-            // 
-            this.lbUnit.AutoSize = true;
-            this.lbUnit.BackColor = System.Drawing.Color.White;
-            this.lbUnit.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.lbUnit.Location = new System.Drawing.Point(836, 131);
-            this.lbUnit.Name = "lbUnit";
-            this.lbUnit.Size = new System.Drawing.Size(26, 18);
-            this.lbUnit.TabIndex = 4;
-            this.lbUnit.Text = "00";
+            this.lbSellCode.AutoSize = true;
+            this.lbSellCode.BackColor = System.Drawing.Color.White;
+            this.lbSellCode.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.lbSellCode.Location = new System.Drawing.Point(841, 131);
+            this.lbSellCode.Name = "lbSellCode";
+            this.lbSellCode.Size = new System.Drawing.Size(17, 18);
+            this.lbSellCode.TabIndex = 4;
+            this.lbSellCode.Text = "0";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(650, 408);
+            this.label1.Location = new System.Drawing.Point(685, 408);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(111, 18);
             this.label1.TabIndex = 5;
@@ -375,80 +371,86 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.LightGray;
-            this.pictureBox1.Location = new System.Drawing.Point(766, 402);
+            this.pictureBox1.Location = new System.Drawing.Point(797, 402);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(122, 32);
+            this.pictureBox1.Size = new System.Drawing.Size(91, 32);
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
-            // label2
+            // lbGrandTotal
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Gainsboro;
-            this.label2.ForeColor = System.Drawing.Color.Green;
-            this.label2.Location = new System.Drawing.Point(776, 408);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 18);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "0000$";
+            this.lbGrandTotal.AutoSize = true;
+            this.lbGrandTotal.BackColor = System.Drawing.Color.Gainsboro;
+            this.lbGrandTotal.ForeColor = System.Drawing.Color.Green;
+            this.lbGrandTotal.Location = new System.Drawing.Point(825, 408);
+            this.lbGrandTotal.Name = "lbGrandTotal";
+            this.lbGrandTotal.Size = new System.Drawing.Size(53, 18);
+            this.lbGrandTotal.TabIndex = 5;
+            this.lbGrandTotal.Text = "0000$";
             // 
-            // button16
+            // btnOrder
             // 
-            this.button16.BackColor = System.Drawing.Color.SaddleBrown;
-            this.button16.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button16.Location = new System.Drawing.Point(596, 446);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(105, 37);
-            this.button16.TabIndex = 7;
-            this.button16.Text = "ORDER";
-            this.button16.UseVisualStyleBackColor = false;
+            this.btnOrder.BackColor = System.Drawing.Color.SaddleBrown;
+            this.btnOrder.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOrder.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnOrder.Location = new System.Drawing.Point(596, 446);
+            this.btnOrder.Name = "btnOrder";
+            this.btnOrder.Size = new System.Drawing.Size(105, 37);
+            this.btnOrder.TabIndex = 7;
+            this.btnOrder.Text = "ORDER";
+            this.btnOrder.UseVisualStyleBackColor = false;
             // 
-            // button17
+            // btnCancel
             // 
-            this.button17.BackColor = System.Drawing.Color.Red;
-            this.button17.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button17.Location = new System.Drawing.Point(550, 446);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(42, 37);
-            this.button17.TabIndex = 7;
-            this.button17.Text = "X";
-            this.button17.UseVisualStyleBackColor = false;
+            this.btnCancel.BackColor = System.Drawing.Color.Red;
+            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnCancel.Location = new System.Drawing.Point(550, 446);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(42, 37);
+            this.btnCancel.TabIndex = 7;
+            this.btnCancel.Text = "X";
+            this.btnCancel.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // lvInvoice
             // 
-            this.button3.BackgroundImage = global::LinkerCofe.Properties.Resources.C3;
-            this.button3.Location = new System.Drawing.Point(397, 8);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(124, 254);
-            this.button3.TabIndex = 0;
-            this.button3.UseVisualStyleBackColor = true;
+            this.lvInvoice.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.colProductName,
+            this.colUPrice,
+            this.colQty,
+            this.colTotal});
+            this.lvInvoice.Font = new System.Drawing.Font("Kh Siemreap", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lvInvoice.Location = new System.Drawing.Point(550, 178);
+            this.lvInvoice.Name = "lvInvoice";
+            this.lvInvoice.Size = new System.Drawing.Size(338, 227);
+            this.lvInvoice.TabIndex = 8;
+            this.lvInvoice.UseCompatibleStateImageBehavior = false;
+            this.lvInvoice.View = System.Windows.Forms.View.Details;
             // 
-            // No
+            // colProductName
             // 
-            this.No.HeaderText = "No";
-            this.No.Name = "No";
-            this.No.Width = 40;
+            this.colProductName.Text = "PRODUCT";
+            this.colProductName.Width = 130;
             // 
-            // Discription
+            // colUPrice
             // 
-            this.Discription.HeaderText = "Disription";
-            this.Discription.Name = "Discription";
+            this.colUPrice.Text = "PRICE";
+            this.colUPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.colUPrice.Width = 70;
             // 
-            // Qty
+            // colQty
             // 
-            this.Qty.HeaderText = "Qty";
-            this.Qty.Name = "Qty";
-            this.Qty.Width = 50;
+            this.colQty.Text = "QTY";
+            this.colQty.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.colQty.Width = 50;
             // 
-            // Price
+            // colTotal
             // 
-            this.Price.HeaderText = "Price";
-            this.Price.Name = "Price";
-            this.Price.Width = 105;
+            this.colTotal.Text = "TOTAL";
+            this.colTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.colTotal.Width = 84;
             // 
             // CustomerForm
             // 
@@ -456,13 +458,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::LinkerCofe.Properties.Resources.Customer_Linker_Cofe_01;
             this.ClientSize = new System.Drawing.Size(900, 550);
-            this.Controls.Add(this.button17);
-            this.Controls.Add(this.button16);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lvInvoice);
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnOrder);
+            this.Controls.Add(this.lbGrandTotal);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.lbUnit);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.lbSellCode);
+            this.Controls.Add(this.tabControl);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -475,13 +477,12 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CustomerForm";
             this.Load += new System.EventHandler(this.CustomerForm_Load);
-            this.tabControl1.ResumeLayout(false);
+            this.tabControl.ResumeLayout(false);
             this.Coffee.ResumeLayout(false);
             this.SoftDrink.ResumeLayout(false);
             this.Food.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -490,7 +491,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl tabControl;
         private System.Windows.Forms.TabPage SoftDrink;
         private System.Windows.Forms.TabPage Food;
         private System.Windows.Forms.MenuStrip menuStrip1;
@@ -501,8 +502,7 @@
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label lbUnit;
+        private System.Windows.Forms.Label lbSellCode;
         private System.Windows.Forms.TabPage Coffee;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
@@ -520,14 +520,15 @@
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbGrandTotal;
         private System.Windows.Forms.ToolStripMenuItem swichToolStripMenuItem;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button btnOrder;
+        private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn No;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Discription;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Qty;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Price;
+        private System.Windows.Forms.ListView lvInvoice;
+        private System.Windows.Forms.ColumnHeader colProductName;
+        private System.Windows.Forms.ColumnHeader colUPrice;
+        private System.Windows.Forms.ColumnHeader colQty;
+        private System.Windows.Forms.ColumnHeader colTotal;
     }
 }

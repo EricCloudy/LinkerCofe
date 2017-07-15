@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ComstomizeProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComstomizeProduct.Designer.cs">
+      <DependentUpon>ComstomizeProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomerForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +63,8 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="MyConnection.cs" />
+    <Compile Include="MyQuery.cs" />
     <Compile Include="Password.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +79,15 @@
     <Compile Include="Seller.Designer.cs">
       <DependentUpon>Seller.cs</DependentUpon>
     </Compile>
+    <Compile Include="Table.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Table.Designer.cs">
+      <DependentUpon>Table.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ComstomizeProduct.resx">
+      <DependentUpon>ComstomizeProduct.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomerForm.resx">
       <DependentUpon>CustomerForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -92,6 +109,9 @@
     </Compile>
     <EmbeddedResource Include="Seller.resx">
       <DependentUpon>Seller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table.resx">
+      <DependentUpon>Table.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
