@@ -104,7 +104,7 @@
             this.txtProductName.Location = new System.Drawing.Point(224, 216);
             this.txtProductName.Name = "txtProductName";
             this.txtProductName.Size = new System.Drawing.Size(210, 26);
-            this.txtProductName.TabIndex = 2;
+            this.txtProductName.TabIndex = 0;
             // 
             // txtPrice
             // 
@@ -112,16 +112,21 @@
             this.txtPrice.Location = new System.Drawing.Point(224, 253);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(210, 26);
-            this.txtPrice.TabIndex = 2;
+            this.txtPrice.TabIndex = 1;
             // 
             // comboType
             // 
+            this.comboType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboType.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboType.FormattingEnabled = true;
+            this.comboType.Items.AddRange(new object[] {
+            "Coffee",
+            "Drink",
+            "Food"});
             this.comboType.Location = new System.Drawing.Point(224, 291);
             this.comboType.Name = "comboType";
             this.comboType.Size = new System.Drawing.Size(210, 28);
-            this.comboType.TabIndex = 3;
+            this.comboType.TabIndex = 2;
             // 
             // pictureBox1
             // 
@@ -138,7 +143,7 @@
             this.btnAdd.Location = new System.Drawing.Point(359, 443);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 28);
-            this.btnAdd.TabIndex = 5;
+            this.btnAdd.TabIndex = 4;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -158,7 +163,7 @@
             this.btnBrowse.Location = new System.Drawing.Point(383, 334);
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.Size = new System.Drawing.Size(51, 23);
-            this.btnBrowse.TabIndex = 6;
+            this.btnBrowse.TabIndex = 3;
             this.btnBrowse.Text = "Browse";
             this.btnBrowse.UseVisualStyleBackColor = true;
             this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
